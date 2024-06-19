@@ -4,14 +4,13 @@
 extern crate alloc;
 extern crate core;
 
-mod api;
-mod compress;
-mod helpers;
-mod host_functions;
-mod ops;
-mod verify;
-
-mod ics23 {
+pub mod api;
+pub mod compress;
+pub mod helpers;
+pub mod host_functions;
+pub mod ops;
+pub mod verify;
+pub mod ics23 {
     include!("cosmos.ics23.v1.rs");
 
     #[cfg(feature = "serde")]
